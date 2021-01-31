@@ -79,7 +79,7 @@ header{
 
 .glass{
     max-width: 960px;
-    max-height: 550px;
+    height: 500px;
     margin: auto;
     padding: 25px 50px;
     background: rgba(50, 61, 109, 0.25);
@@ -93,14 +93,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .profile-img{
-    min-width: 350px;
-    height: 490px;
+    width: 400px;
+    height: 500px;
     /* border: 1px red solid; */
     background-color: white;
+    background: url('../img/daniek03.svg') no-repeat center;
+    background-size: 370px;
+    /* border: 1px red solid; */
+    
+    position: absolute;
+    bottom: -11px;
 }
 
 .glass-internal-container{
