@@ -12,6 +12,10 @@
     --font-Paragraphs: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--darkblue);
     color: white;
