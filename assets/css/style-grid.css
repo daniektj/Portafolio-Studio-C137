@@ -33,7 +33,7 @@ body{
   
   .header { grid-area: header; }
   .hero { grid-area: hero; overflow: hidden;}
-  .section-01 { grid-area: section-01; overflow: hidden;}
+  .section-01 { grid-area: section-01; overflow: hidden; border-top: 2px var(--darkblue) solid;}
   .section-02 { grid-area: section-02; }
   .footer { grid-area: footer; overflow: hidden;}
 
@@ -92,7 +92,7 @@ body{
     width: 100vw;
 /*     border: 1px red solid; */
     background: url("../images/stars.png") center center repeat-x;
-    background-size: 1440px;
+    background-size: 800px;
 }
 
 .hero-img{
