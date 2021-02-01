@@ -165,6 +165,7 @@ body{
     background: url('../images/daniek03.svg') no-repeat;
     background-position: center top;
     background-size: 110px;
+    filter: drop-shadow(0px -5px 7px rgba(0, 195, 255, 0.35));
     /* border: 1px red solid; */
     
     position: absolute;
