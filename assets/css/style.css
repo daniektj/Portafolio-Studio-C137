@@ -226,7 +226,7 @@ li{
 
 .stars{
     width: 100vw;
-    border: 1px red solid;
+/*     border: 1px red solid; */
     background: url("../images/stars.png") center center repeat-x;
     background-size: 1440px;
 }
@@ -237,8 +237,8 @@ li{
     background-image: url("../images/tierra01.svg");
     background-position: center bottom;
     background-repeat: repeat-x;
-    border: 1px red solid;
-    border-bottom: 1px var(--darkblue) solid;
+    /* border: 1px red solid; */
+    border-bottom: 0px var(--darkblue) solid;
 
     font-size: 50px;
     position: relative;
