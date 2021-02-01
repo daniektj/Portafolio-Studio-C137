@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio C-137</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="assets/css/style-mobile.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;800;900&display=swap" rel="stylesheet">
 
   </head>
   <body>
     <header>
-      <img src="assets/img/logo.png" id="logo" alt="logo" />
+      <img src="assets/images/logo.png" id="logo" alt="logo" />
       <div class="header-menu">
-        <a class="menu-link" href="">Inicio</a>
-        <a class="menu-link" href="">Proyectos</a>
+        <a class="menu-link" href="">Sobre mí</a>
+        <a class="menu-link" href="#projects">Proyectos</a>
         <a class="menu-link" href="">Contacto</a>
       </div>
     </header>
@@ -38,7 +39,7 @@
               <div class="glass-internal-container">
                   <h3>Daniek Reyes</h2>
                   <h4>Frontend Dev Jr.</h3>
-                  <h5>Cuento con 1 año de experiencia en el mundo del Frontend, me apasiona la tecnologia, en especial el diseño grafico, diseño web y la fotografia, las tecnologias que suelo utilizar en mis trabajos son:</h5>
+                  <span class="bio">Cuento con 1 año de experiencia en el mundo del Frontend, me apasiona la tecnologia, en especial el diseño grafico, diseño web y la fotografia, las tecnologias que suelo utilizar en mis trabajos son:</span>
                     <br><br>
                     <div class="techs">
                       <ul>
@@ -66,39 +67,46 @@
 
 
     <!--   -----SEGUNDA SECCION-----   -->
-    <section class="projects-container">
+    <section class="projects-container" id="projects">
       <h2 class="section-title">prOyectOs</h2>
       <div class="projects">
-        
-        <div class="project-card">
-          <img class="card-image" src="assets/img/project-01.png" alt="">
-          <div class="card-data">
-            <a href="https://glassgenerator.netlify.app" class="card-title">Glass Morphism Generator</a>
-            <span class="card-tech">HTML - CSS - JavaScript</span>
-            <!-- <span class="card-description">Generador de codigo CSS hecho para ayudar a la comunidad a implementar de manera sencilla la tendencia del Glass Morphism</span> -->
-          </div>
-        </div>
 
-        <div class="project-card">
-          <img class="card-image" src="assets/img/project-02.png" alt="">
-          <div class="card-data">
-            <a href="https://codepen.io/daniektj/pen/eYZdwBw" class="card-title">Rick Sanchez Portal</a>
-            <span class="card-tech">HTML - CSS - JavaScript</span>
-            <!-- <span class="card-description">Generador de codigo CSS hecho para ayudar a la comunidad a implementar de manera sencilla la tendencia del Glass Morphism</span> -->
+        <a href="https://glassgenerator.netlify.app" title="Glass Morphism Generator" target="_blank" role="button" class="card__container">
+          <div class="card__header">
+            <h5 class="card__title">Glass Morphism Generator</h5>
+            <div class="card__techs__container">
+              <span class="cars__techs">HTML - CSS - JAVASCRIPT -</span>
+            </div>
           </div>
-        </div>
+          <img src="assets/images/project-01.jpg" alt="Glass Morphism" class="card__image">
+        </a>
 
-        <div class="project-card">
-          <img class="card-image" src="assets/img/project-03.png" alt="">
-          <div class="card-data">
-            <a href="https://codepen.io/daniektj/pen/xxVdvdx" class="card-title">Charizard #PokeCSS</a>
-            <span class="card-tech">HTML - CSS</span>
-            <!-- <span class="card-description">Generador de codigo CSS hecho para ayudar a la comunidad a implementar de manera sencilla la tendencia del Glass Morphism</span> -->
+        <a href="https://codepen.io/daniektj/pen/eYZdwBw" title="Rick Sanchez Portal" target="_blank"  role="button" class="card__container">
+          <div class="card__header">
+            <h5 class="card__title">Rick Sanchez Portal</h5>
+            <div class="card__techs__container">
+              <span class="cars__techs">HTML - CSS - JAVASCRIPT -</span>
+            </div>
           </div>
-        </div>
+          <img src="assets/images/project-02.jpg" alt="Rick Sanchez Portal" class="card__image">
+        </a>
 
+        <a href="https://codepen.io/daniektj/pen/xxVdvdx" title="Charizard PokeCSS" target="_blank"  role="button" class="card__container">
+          <div class="card__header">
+            <h5 class="card__title">Charizard PokeCSS</h5>
+            <div class="card__techs__container">
+              <span class="cars__techs">HTML - CSS -</span>
+            </div>
+          </div>
+          <img src="assets/images/project-03.jpg" alt="Charizard PokeCSS" class="card__image">
+        </a>
       </div>
     </section>
+
+<!--     <section class="about_container" id="about">
+
+    </section> -->
+
 
     <section class="contact">
       <figure class="rocks"></figure>
