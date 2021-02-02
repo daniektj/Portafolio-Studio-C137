@@ -30,7 +30,7 @@
       <div class="header-menu">
         <a class="menu-link" href="">Sobre mí</a>
         <a class="menu-link" href="#projects">Proyectos</a>
-        <a class="menu-link" href="">Contacto</a>
+        <a class="menu-link" href="#contact">Contacto</a>
       </div>
     </header>
 
@@ -115,6 +115,17 @@
           </div>
           <img src="assets/images/project-03.jpg" alt="Charizard PokeCSS" class="card__image">
         </a>
+        <a href="https://glassgenerator.netlify.app" title="Glass Morphism Generator" target="_blank" role="button" class="card__container">
+          <div class="card__header">
+            <h5 class="card__title">Glass Morphism Generator</h5>
+            <div class="card__techs__container">
+              <span class="cars__techs">HTML - CSS - JAVASCRIPT -</span>
+            </div>
+          </div>
+          <img src="assets/images/project-01.jpg" alt="Glass Morphism" class="card__image">
+        </a>
+
+       
       </div>
     </section>
   </div>
@@ -122,17 +133,40 @@
   
   <div class="section-02">
     <div class="contact__container">
-      <h2 class="section-title">CONTACTO</h2>
+      <h2 class="section-title" id="contact">CONTACTO</h2>
+
+      <div class="social">
+        <p>Tambien puedes contactarme en:</p>
+        <div class="social__container">
+          <a href="https://twitter.com/daniektj" target="blank" class="social__link"><figure class="social__twitter"></figure></a>
+          <a href="https://github.com/daniektj" target="blank" class="social__link"><figure class="social__github"></figure></a>
+        </div>
+      </div>
       
-      <form class="contact__form">
+      <form class="contact__form" method="POST" />
         <input class="contact__name --input" id="contact__name" type="text" name="name" placeholder="Ingresa tu nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
         <input class="contact__mail --input" type="email" name="email" placeholder="Ingresa tu correo" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
         <textarea class="contact__text --input" name="comments" cols="50" rows="8" placeholder="Déjame tus comentarios" required></textarea>
-        <!--<div class="contact-form-loader text-center none">
-          <img src=" assets/loader.svg" alt="Enviando...">
-        </div> -->
+        
+        <div class="contact-form-loader text-center none">
+          <img src="assets/images/loader.svg" alt="Enviando...">
+        </div>
+
         <input class="contact__button" type="submit" value="ENVIAR MENSAJE">
       </form>
+
+
+      <article id="gracias" class="modal">
+        <div class="modal-content">
+          <article class="contact-form-response">
+            <span class="modal_text">
+              ¡Muchas Gracias!
+              <br>
+              Por tu comentario
+            </span>
+          </article>
+        </div>
+      </article>
 
     </div>
   </div>
@@ -146,5 +180,6 @@
   </div>
   </div>
     <!-- <div class="projects"></div> -->
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

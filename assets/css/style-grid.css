@@ -388,9 +388,49 @@ li{
 
 
   /* ---------------- CONTACTO ---------------- */
-
 .contact__container{
-      
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px red solid; */
+}
+
+#contact{
+    margin-top: 120px;
+}
+
+.social{
+    max-width: 800px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    /* border: 1px red solid; */
+    gap: 20px;
+}
+.social__container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  /*   border: 1px red solid; */
+}
+
+.social__link{
+    text-decoration: none;
+}
+
+.social__github{
+    width: 35px;
+    height: 35px;
+    background: url('../images/github-icon.svg') no-repeat center;
+    background-size: cover;
+}
+.social__twitter{
+    width: 35px;
+    height: 35px;
+    background: url('../images/twitter-icon.svg') no-repeat center;
+    background-size: cover;
 }
 
 .contact__form{
@@ -399,7 +439,7 @@ li{
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .--input{
@@ -464,7 +504,6 @@ li{
 
 
 
-
   /* ---------------- CONTACTO ---------------- */
 .contact{
     width: 100vw;
@@ -489,9 +528,57 @@ li{
 h6{
     text-align: center;
     font-size: .8rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: -50px;
 }
+
+
+
+
+/* ---------------- MODAL ---------------- */
+
+.none {
+    display: none;
+  }
+
+.modal_text{
+    font-family: var(--font-Heads);
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: var(--darkblue);
+}
+
+.modal#gracias:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+  }
+  
+  .modal-content {
+    position: relative;
+  }
+  
+  .modal[id|="trabajo"]:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
 
 
 
@@ -666,9 +753,17 @@ li{
 }
 
 .projects{
-    min-width: 1100px;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
+}
+
+.card__title{
+    max-width: 450px;
+}
+
+.card__image{
+    width: 450px;
 }
 
 
@@ -686,7 +781,6 @@ li{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
 }
 
 .--input{
