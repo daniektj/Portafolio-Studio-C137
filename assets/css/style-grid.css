@@ -115,23 +115,12 @@ body{
 }
 
 
-
-
-
-
-
 /* ---------------- GLASS ---------------- */
 
 .glass-container{
     margin: auto;
     margin-top: 40px;
-    /* max-width: 1440px; */
-/*     display: flex;
-    justify-content: center; */
-    /* border: 1px rgba(255, 0, 0, 0.26) solid; */
-  /*   overflow: hidden; */
-
-    
+   
 }
 
 .sub-container{
@@ -263,13 +252,6 @@ li{
 }
 
 
-
-
-
-
-
-
-
 /* ---------------- PROYECTOS ---------------- */
 /* .section-01{
     border: 1px solid orangered;
@@ -385,8 +367,6 @@ li{
   }
 
 
-
-
   /* ---------------- CONTACTO ---------------- */
 .contact__container{
     max-width: 800px;
@@ -498,12 +478,6 @@ li{
 }
 
 
-
-
-
-
-
-
   /* ---------------- CONTACTO ---------------- */
 .contact{
     width: 100vw;
@@ -531,7 +505,6 @@ h6{
     font-weight: 400;
     margin-top: -50px;
 }
-
 
 
 
@@ -577,10 +550,6 @@ h6{
     opacity: 1;
     pointer-events: auto;
   }
-
-
-
-
 
 
  /* ---------------- RESPONSIVE ---------------- */
@@ -810,13 +779,6 @@ li{
     width: 100%;
     margin-top: 15px;
 }
-
-
-
-
-
-
-
 
 
 
