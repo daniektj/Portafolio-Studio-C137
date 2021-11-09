@@ -292,26 +292,30 @@ li{
     
 }
 
+/* ---------------- CARDS ---------------- */
+
 .card__container{
     cursor: pointer;
     margin-bottom: 20px;
     text-decoration: none;
     color: white;
+    transition: transform 250ms ease-in-out;
 }
 
-.card__container:hover .card__header{
-    background-color: var(--green);
-    border: 2px solid var(--green);
-    transform: scale(1.00);
-    margin-top: -15px;
-    margin-bottom: 20px;
-    transition: 0.4s ease-out;
-  }
+.card__container:hover{
+    transform: scale(104%);
+}  
 
 .card__header{
     background-color: var(--blue);
     border: 2px solid var(--blue);
     margin-bottom: 10px;
+    transition: background-color 180ms ease-in-out;
+}
+
+.card__container:hover .card__header{
+    background-color: var(--green);
+    border: 2px solid var(--green);
 }
 
 .card__title{
@@ -330,7 +334,6 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: relative;
 }
 .card__techs__container::after{
@@ -353,7 +356,8 @@ li{
 .card__image{
     width: 350px;
     border: 2px solid var(--blue);
-    border-bottom: 8px solid var(--blue);;
+    border-bottom: 8px solid var(--blue);
+    transition: border 180ms ease-in-out;
 }
 
 
@@ -361,9 +365,6 @@ li{
     background-color: var(--green);
     border: 2px solid var(--green);
     border-bottom: 8px solid var(--green);
-    margin-top: -10px;
-    transform: scale(1.00);
-    transition: 0.4s ease-out;
   }
 
 
